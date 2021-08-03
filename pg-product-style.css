@@ -1,0 +1,168 @@
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(img/japan-bg-5.jpg);
+  background-blend-mode: overlay;
+  background-position: center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.product-banner {
+  padding: 6rem 4rem;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 15px;
+  color: #ffe9e3;
+  font-family: "Martel", serif;
+}
+
+#top-box {
+  box-shadow: 0 0 20px #c3aed6, 0 0 80px #efbbcf, 0 0 100px #8675a9;
+}
+
+hr {
+  border-top: 2px;
+  margin: 0 80px;
+}
+
+.product-body-txt {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: #fbf9fa;
+  text-align: center;
+}
+
+.electronic-intro {
+  margin-top: 5rem;
+}
+
+.electronic-intro > #sony-image {
+  display: block;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.technology-image {
+  display: block;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.product-body-txt h2 {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 28px;
+  line-height: 40px;
+  padding-top: 80px;
+}
+
+.product-body-txt p {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 40px;
+  padding: 40px 90px 90px 90px;
+  font-size: 16px;
+}
+
+.headphone-img {
+  height: 690px;
+  object-position: 50% 50%;
+}
+
+#shin-osaka-img {
+  object-position: 50% 100%;
+}
+
+#taxi-image {
+  object-position: 50% 80%;
+}
+
+@media (max-width: 935px) {
+  .electronic-intro.grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-banner {
+    max-width: 90%;
+    margin: 4rem auto;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-banner {
+    padding: 8rem 2rem;
+    max-width: 90%;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    line-height: 45px;
+  }
+
+  .product-body-txt h2 {
+    font-size: 1.5rem;
+    padding: 0 20px;
+    padding-top: 80px;
+  }
+
+  .product-body-txt p {
+    line-height: 30px;
+    padding: 60px;
+    font-size: 0.9rem;
+  }
+
+  .electronic-intro > #sony-image {
+    height: 200px;
+  }
+
+  .electronic-intro > #sony-image {
+    height: 300px;
+  }
+
+  .technology-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 380px) {
+  .product-banner {
+    font-size: 1.1rem;
+    padding: 6rem 2rem;
+  }
+
+  .product-body-txt h2 {
+    font-size: 1.5rem;
+    padding: 0 30px;
+    padding-top: 80px;
+  }
+
+  .product-body-txt p {
+    line-height: 30px;
+    padding: 60px 30px;
+    font-size: 0.9rem;
+  }
+
+  .electronic-intro > #sony-image {
+    height: 300px;
+  }
+
+  .technology-image {
+    height: 300px;
+  }
+}
